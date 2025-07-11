@@ -1,3 +1,3 @@
-module github.com/nooclear/advancedlogging
+module github.com/nooclear/AdvancedLogging
 
 go 1.24.4
