@@ -12,9 +12,7 @@ var Cyan = Color("\033[36m")
 var Gray = Color("\033[37m")
 var White = Color("\033[97m")
 
-type Level Color
-
-var InfoColor = Level(Green)
-var WarnColor = Level(Yellow)
-var ErrorColor = Level(Red)
-var DebugColor = Level(Magenta)
+var InfoColor = Green
+var WarnColor = Yellow
+var ErrorColor = Red
+var DebugColor = Magenta
