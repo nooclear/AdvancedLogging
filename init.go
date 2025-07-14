@@ -23,7 +23,7 @@ func Info(log Log) ALog {
 		Log:       log,
 	}
 
-	fmt.Println(fmt.Sprintf("%sINFO  %v %s : %v%s", InfoColor, alog.Timestamp, log.Sender, log.Message, Reset))
+	fmt.Println(fmt.Sprintf("%sINFO  %v %s->%v%s", InfoColor, alog.Timestamp, log.Sender, log.Message, Reset))
 	return alog
 }
 
@@ -34,7 +34,7 @@ func Warn(log Log) ALog {
 		Log:       log,
 	}
 
-	fmt.Println(fmt.Sprintf("%sWARN  %v %s : %v%s", WarnColor, alog.Timestamp, log.Sender, log.Message, Reset))
+	fmt.Println(fmt.Sprintf("%sWARN  %v %s->%v%s", WarnColor, alog.Timestamp, log.Sender, log.Message, Reset))
 	return alog
 }
 
@@ -45,7 +45,7 @@ func Error(log Log) ALog {
 		Log:       log,
 	}
 
-	fmt.Println(fmt.Sprintf("%sERROR %v %s : %v%s", ErrorColor, alog.Timestamp, log.Sender, log.Message, Reset))
+	fmt.Println(fmt.Sprintf("%sERROR %v %s->%v%s", ErrorColor, alog.Timestamp, log.Sender, log.Message, Reset))
 	return alog
 }
 
@@ -56,6 +56,6 @@ func Debug(log Log) ALog {
 		Log:       log,
 	}
 
-	fmt.Println(fmt.Sprintf("%sDEBUG %v %s : %v%s", DebugColor, alog.Timestamp, log.Sender, log.Message, Reset))
+	fmt.Println(fmt.Sprintf("%sDEBUG %v %s->%v%s", DebugColor, alog.Timestamp, log.Sender, log.Message, Reset))
 	return alog
 }
